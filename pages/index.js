@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import {images} from "../constants"
-
+import {useTheme} from '../context'
 export default function Home() {
+
   return (
-    <div>
+    <div className='mode-light'>
+
     </div>
   )
 }
