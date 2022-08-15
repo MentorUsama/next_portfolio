@@ -1,9 +1,11 @@
-import {useTheme} from '../context'
+import Wrapper from '../wrappers/Wrapper'
 export default function Home() {
 
   return (
-    <div className='mode-light'>
-
-    </div>
+    <Wrapper >
+      <div style={{backgroundColor:'red',height:"100vh"}}></div>
+      <div style={{backgroundColor:'purple',height:"100vh"}}></div>
+      <div style={{backgroundColor:'magenta',height:"100vh"}}></div>
+    </Wrapper>
   )
 }

@@ -1,9 +1,8 @@
+// import '../styles/reset.css'
 import '../styles/globals.scss'
 import Head from 'next/head'
 import { ThemeProvider } from '../context';
-import {useState} from 'react'
 function MyApp({ Component, pageProps }) {
-  const [mode,setMode]=useState("light")
   return (<>
     <Head>
       <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -14,7 +13,6 @@ function MyApp({ Component, pageProps }) {
       {/* Fonts Import */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
       <title>Muhammad Usama</title>
     </Head>
     <ThemeProvider>

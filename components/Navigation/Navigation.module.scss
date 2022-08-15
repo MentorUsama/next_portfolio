@@ -1,0 +1,142 @@
+.navigation__container{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0px;
+    background-color: #FFFFFF;
+    @media screen and (max-width:980px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media screen and (max-width:750px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.hamBurger{
+    display: none;
+    @media screen and (max-width:700px) {
+        display: block;
+        font-size: 25px;
+    }
+    svg{
+        cursor: pointer;
+    }
+}
+
+
+.navigation__logo{
+    display: flex;
+    align-items: center;
+    div{
+        width: 60px;
+        margin-right: 10px;
+    }
+    h1{
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 700;
+        @media screen and (max-width:700px) {
+            display: none;
+        }
+    }
+}
+
+
+.navigation__links{
+    ul{
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        li{
+            margin-right: 30px;
+        }
+        a{
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: rgba(0,0,0,.55);
+            &:hover{
+                color: #ffc200;
+            }
+        }
+    }
+    @media screen and (max-width:700px) {
+        display: none;
+    }
+}
+
+
+.navigation__icons{
+    display: flex;
+    div{
+        cursor: pointer;
+        font-size: 25px;
+    }
+    @media screen and (max-width:700px) {
+        display: none;
+    }
+}
+
+
+.mobile__navigation_backdrop{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+    z-index: 8;
+}
+.mobile__navigation_main{
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index:9;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 0px;
+        li{
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: rgba(0,0,0,.55);
+        }
+    }
+    .icon{
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        svg{
+            cursor: pointer;
+        }
+    }
+}
