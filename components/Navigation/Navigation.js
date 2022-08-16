@@ -11,7 +11,7 @@ import * as classes from './Navigation.module.scss'
 export default function Navigation(props) {
   const [openMenue,setOpenMenue]=useState(false)
   return (
-    <div className={classes.navigation__container}>
+    <div className={`${classes.navigation__container} ${props.mode=="light"?classes.light:classes.dark}`}>
         {/* Mobile Menue */}
         <div className={classes.mobile__navigation}>
             {openMenue?<div onClick={()=>setOpenMenue(false)} className={classes.mobile__navigation_backdrop}></div>:null}

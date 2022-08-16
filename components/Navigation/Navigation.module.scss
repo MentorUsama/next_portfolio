@@ -15,13 +15,16 @@
         padding-right: 20px;
     }
 }
+.dark.navigation__container{
+    background-color: rgb(12, 12, 13);
+}
 
 
 .navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20px;
+    height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -35,6 +38,11 @@
     }
     svg{
         cursor: pointer;
+    }
+}
+.dark .hamBurger{
+    svg{
+        fill: #FFFFFF;
     }
 }
 
@@ -53,6 +61,11 @@
         @media screen and (max-width:700px) {
             display: none;
         }
+    }
+}
+.dark .navigation__logo{
+    h1{
+        color: #FFFFFF;
     }
 }
 
@@ -80,6 +93,16 @@
         display: none;
     }
 }
+.dark .navigation__links{
+    ul{
+        a{
+            color: #ffffffb7;
+            &:hover{
+                color: #ffc200;
+            }
+        }
+    }
+}
 
 
 .navigation__icons{
@@ -92,28 +115,41 @@
         display: none;
     }
 }
+.dark .navigation__icons{
+    svg{
+        fill: #FFFFFF;
+    }
+}
 
 
 .mobile__navigation_backdrop{
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.1);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    padding: 1px;
+    background-color: rgba(0,0,0,0.4);
     cursor: pointer;
     z-index: 8;
 }
+.dark .mobile__navigation_backdrop{
+    background-color: rgba(0,0,0,0.7);
+}
 .mobile__navigation_main{
-    width: 80vw;
+    margin: 0px;
+    margin-right: 0px;
+    width: 70vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     z-index:9;
     padding-top: 25px;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #FFFFFF;
     ul{
         text-decoration: none;
         list-style-type: none;
@@ -137,6 +173,22 @@
         margin-left: auto;
         svg{
             cursor: pointer;
+        }
+    }
+}
+.dark .mobile__navigation_main{
+    background-color:  rgb(12, 12, 13);
+    ul{
+        a{
+            color: #ffffffb7;
+            &:hover{
+                color: #ffc200;
+            }
+        }
+    }
+    .icon{
+        svg{
+            fill: #FFFFFF;
         }
     }
 }
