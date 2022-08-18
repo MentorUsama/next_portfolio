@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import * as classes from "./Hero.module.scss";
-import { images } from "../../constants/index";
-import {Button} from '../../components/index'
+import { images } from "../../../constants/index";
+import {Button} from '../../../components/index'
 import {useAnimationControls,motion } from 'framer-motion'
 export default function Hero(props) {
   const [text, setText] = useState("Frontend Developer");
