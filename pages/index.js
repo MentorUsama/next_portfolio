@@ -1,14 +1,13 @@
 import Wrapper from '../wrappers/Wrapper'
-import {Hero,Services} from '../sections/index'
+import {Hero,Services,Skills} from '../sections/index'
 import { useTheme } from '../context'
 export default function Home() {
   const theme=useTheme()
   return (
     <Wrapper >
-      <Hero mode={theme.mode}></Hero>
+      <Hero mode={theme.mode} />
       <Services mode={theme.mode} />
-      <div style={{backgroundColor:'purple',height:"100vh"}}></div>
-      <div style={{backgroundColor:'magenta',height:"100vh"}}></div>
+      <Skills mode={theme.mode}  />
     </Wrapper>
   )
 }
