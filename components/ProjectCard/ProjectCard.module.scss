@@ -1,12 +1,14 @@
 .projectCard{
     background-color: #FFFFFF;
-    padding: 10px 10px;   
     position: relative;
     border-width: 3px;
     border-style: solid;
     border-color: rgba(12, 12, 13, 0.11);
     transition: box-shadow,background-color 1s ease 0s;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
     &:hover{
         box-shadow: -3px 3px 11px 0px rgba(0,0,0,0.2);
@@ -28,6 +30,13 @@
         -moz-box-shadow: -3px 3px 11px 0px rgba(255, 255, 255, 0.2);
         transition: box-shadow 1s ease 0s;
     }
+}
+
+
+.main_content_container{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 
@@ -115,5 +124,71 @@
     &>div{
         border: 1px solid #ffffff85;
         transition: border 1s ease 0s;
+    }
+}
+
+.projectCard__links{
+    display: flex;
+    margin-top: 10px;
+    &>a{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(12, 12, 13, 0.11);
+        transition: border,flex-basis,width 1s ease 0s;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom-width: 0px;
+        svg{
+            color: rgb(0, 0, 0);
+        }
+        cursor: pointer;
+        &:first-child{
+            border-left-width: 0px;
+        }
+        &:last-child{
+            border-right-width: 0px;
+        }
+        &:hover{
+            flex-basis: 70%;
+            transition: border,flex-basis,width 1s ease 0s;
+            svg{
+                color: #ffc200;
+            }
+        }
+    }
+    &>a.disabled{
+        opacity: 0.3;
+        cursor: default;
+        &:hover{
+            flex-basis: 50%;
+            transition: flex-basis 1s ease 0s;
+            opacity: 0.3;
+            svg{
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+.dark .projectCard__links{
+    &>a{
+        border-color: #ffffff85;
+        transition: border 1s ease 0s;
+        svg{
+            color: #FFFFFF;
+        }
+        &:hover{
+            svg{
+                color: #ffc200;
+            }
+        }
+    }
+    &>a.disabled{
+        color: #FFFFFF;
+        &:hover{
+            svg{
+                color: #FFFFFF;
+            }
+        }
     }
 }

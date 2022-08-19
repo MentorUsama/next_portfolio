@@ -5,6 +5,13 @@ import { images } from "../../../constants/index";
 import Multiselect from "multiselect-react-dropdown";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
+function getSkillName(skills,id){
+  console.log(skills)
+  const result=skills.find(skill=>skill.id==id)
+  if(result)
+    return result.name
+  return ""
+}
 export default function Projects(props) {
   return (
     <div
@@ -73,7 +80,11 @@ export default function Projects(props) {
                 title={project.title}
                 description={project.description}
                 banner={project.image}
-                tags={["HTML", "CSS", "Javascript", "React", "Firebase"]}
+                github={project.github}
+                host={project.host}
+                skills={props.skills}
+                getSkillName={getSkillName}
+                tags={project.skill_ids}
               />
             </div>
           ))

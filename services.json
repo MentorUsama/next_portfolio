@@ -27,70 +27,70 @@
     ],
     "skills":[
         {
-            "id":1,
+            "id":"HTML",
             "name":"HTML",
             "priority":1,
             "image":"skills_html.png",
             "type":"primary"
         },
         {
-            "id":2,
+            "id":"CSS",
             "name":"CSS",
             "priority":2,
             "image":"skills_css.png",
             "type":"primary"
         },
         {
-            "id":3,
+            "id":"JAVASCRIPT",
             "name":"Javascript",
             "priority":3,
             "image":"skills_javascript.png",
             "type":"primary"
         },
         {
-            "id":4,
+            "id":"BOOTSTRAP",
             "name":"Bootstrap",
             "priority":4,
             "image":"skill_bootstrap.png",
             "type":"secondary"
         },
         {
-            "id":5,
+            "id":"REACT",
             "name":"React",
             "priority":5,
             "image":"skills_react_native.png",
             "type":"primary"
         },
         {
-            "id":6,
+            "id":"NEXTJS",
             "name":"Next Js",
             "priority":6,
             "image":"skills_next_js.svg",
             "type":"primary"
         },
         {
-            "id":7,
+            "id":"REACTNATIVE",
             "name":"React Native",
             "priority":7,
             "image":"skills_react_native.png",
             "type":"primary"
         },
         {
-            "id":8,
+            "id":"MATERIALUI",
             "name":"Material UI",
             "priority":8,
             "image":"skills_material_ui.png",
             "type":"secondary"
         },
         {
-            "id":9,
+            "id":"DJANGO",
             "name":"Django",
             "priority":9,
             "image":"skills_django.png",
             "type":"secondary"
         },
         {
-            "id":10,
+            "id":"FIREBASE",
             "name":"Firebase",
             "priority":10,
             "image":"skills_firebase.svg",
@@ -101,11 +101,11 @@
         {
             "id":1,
             "service_ids":[1],
-            "skill_ids":[5,10,3,2,1],
+            "skill_ids":["REACT","FIREBASE","JAVASCRIPT","CSS","HTML"],
             "title":"Slack App",
             "description":"Chatting app with functionality of both private and public messaging.",
             "image":"slack_app.png",
-            "guthub":"https://github.com/MentorUsama/massengerApp",
+            "github":"https://github.com/MentorUsama/massengerApp",
             "host":"https://slack-7260c.firebaseapp.com/",
             "is_upwork":false,
             "priority":1
@@ -113,11 +113,11 @@
         {
             "id":2,
             "service_ids":[1],
-            "skill_ids":[5,10,3,2,1],
+            "skill_ids":["REACT","FIREBASE","JAVASCRIPT","CSS","HTML"],
             "title":"Burger Builder",
             "description":"Simple Burger Builder app with firebase authentication and database.",
             "image":"burger_builder.PNG",
-            "guthub":"https://github.com/MentorUsama/ReactBurgerBuilder",
+            "github":"https://github.com/MentorUsama/ReactBurgerBuilder",
             "host":"https://burger-b4810.web.app/",
             "is_upwork":false,
             "priority":2
@@ -125,11 +125,11 @@
         {
             "id":3,
             "service_ids":[2],
-            "skill_ids":[7,3,2,1],
+            "skill_ids":["REACTNATIVE","JAVASCRIPT","CSS","HTML"],
             "title":"Visual Shop",
             "description":"An ecommerce react native app with functionality of searching product by image.",
             "image":"visual_shop_app.jpeg",
-            "guthub":"https://github.com/MentorUsama/visual_shop_frontend",
+            "github":"https://github.com/MentorUsama/visual_shop_frontend",
             "host":"",
             "is_upwork":false,
             "priority":3
@@ -137,11 +137,11 @@
         {
             "id":4,
             "service_ids":[2],
-            "skill_ids":[7,10,3,2,1],
+            "skill_ids":["REACTNATIVE","FIREBASE","JAVASCRIPT","CSS","HTML"],
             "title":"Ticket Booking",
             "description":"React native app for booking ticket online.",
             "image":"ticket_bookin_app.PNG",
-            "guthub":"https://github.com/MentorUsama/visual_shop_frontend",
+            "github":"https://github.com/MentorUsama/visual_shop_frontend",
             "host":"",
             "is_upwork":false,
             "priority":4
@@ -149,11 +149,11 @@
         {
             "id":5,
             "service_ids":[3],
-            "skill_ids":[3,2,1,10],
+            "skill_ids":["JAVASCRIPT","CSS","HTML","FIREBASE"],
             "title":"PWA Blog",
             "description":"Simple Blog with progressive web app functionality",
             "image":"service_worker.PNG",
-            "guthub":"https://github.com/MentorUsama/visual_shop_frontend",
+            "github":"https://github.com/MentorUsama/visual_shop_frontend",
             "host":"",
             "is_upwork":false,
             "priority":5
@@ -161,11 +161,11 @@
         {
             "id":6,
             "service_ids":[1],
-            "skill_ids":[3,2,1,6],
+            "skill_ids":["JAVASCRIPT","CSS","HTML","NEXTJS"],
             "title":"Portfolio",
             "description":"Simple Next js portfolio website with static page rendering.",
             "image":"portfolio.PNG",
-            "guthub":"",
+            "github":"",
             "host":"",
             "is_upwork":false,
             "priority":6
