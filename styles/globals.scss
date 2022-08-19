@@ -11,3 +11,53 @@ body{
     padding: 0px;
     background-color: inherit;
 }
+
+
+.project-multi-selector{
+    background-color: #FFFFFF;
+    transition: background-color 1s ease 0s;
+    &>div{
+        height: 100%;
+    }
+}
+.dark.project-multi-selector{
+    background-color:  rgb(12, 12, 13);
+    transition: background-color 1s ease 0s;
+    .chip{
+        color: #FFFFFF;
+    }
+    input::placeholder{
+        color: #FFFFFF;
+    }
+}
+
+
+.project-multi-selector.single{
+    img{
+        display: none;
+    }
+}
+
+
+.project-multi-selector.multiple{
+    .search-wrapper{
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .chip{
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(148, 148, 148);
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+}
+.dark.project-multi-selector.multiple
+{
+    .chip{
+        color: #FFFFFF;
+    }
+}
+
