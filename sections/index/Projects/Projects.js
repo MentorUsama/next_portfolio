@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import * as classes from "./Projects.module.scss";
 import ProjectCard from "../../../components/ProjectCard/ProjectCard";
-import { images } from "../../../constants/index";
 import Multiselect from "multiselect-react-dropdown";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 function getSkillName(skills,id){
-  console.log(skills)
   const result=skills.find(skill=>skill.id==id)
   if(result)
     return result.name
@@ -28,7 +26,7 @@ export default function Projects(props) {
         >
           <Multiselect
             options={props.services} // Options to display in the dropdown
-            selectedValues={props.selctedService} // Preselected value to persist in dropdown
+           
             onSelect={props.onServiceSelect} // Function will trigger on select event
             onRemove={props.onServiceRemoved}
             displayValue="title" // Property name to display in the dropdown options
@@ -47,7 +45,7 @@ export default function Projects(props) {
         >
           <Multiselect
             options={props.skills} // Options to display in the dropdown
-            selectedValues={props.selectedSkill} // Preselected value to persist in dropdown
+           
             onSelect={props.onSelect} // Function will trigger on select event
             onRemove={props.onRemove} // Function will trigger on remove event
             displayValue="name" // Property name to display in the dropdown options
@@ -73,7 +71,7 @@ export default function Projects(props) {
       </div>
       <div className={classes.projects__container}>
         {
-          props.projects.map(project=>(
+          props.filteredProject.length>0?props.filteredProject.map(project=>(
             <div key={project.id}>
               <ProjectCard
                 mode={props.mode}
@@ -88,8 +86,10 @@ export default function Projects(props) {
               />
             </div>
           ))
+          :<p>No Project Found For Above Filter</p>
         }
       </div>
+      
     </div>
   );
 }

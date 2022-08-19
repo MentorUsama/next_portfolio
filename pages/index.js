@@ -10,10 +10,42 @@ export default function Home(props) {
   const services=[{id:0,title:"Any Service"}, ...props.data.services]
   const [selectedSkill, setSelectedSkill] = useState([]);
   const [selctedService, setSelectedService] = useState([services[0]]);
-  function onSkillSelect(selectedList, selectedItem) {setSelectedSkill(selectedList);}
-  function onSkillRemove(selectedList, removedItem) {setSelectedSkill(selectedList);}
-  function onServiceSelect(selectedList, selectedItem) {setSelectedService([selectedItem]);}
-  function onServiceRemoved(selectedList, selectedItem) {setSelectedService([selectedItem]);}
+  const [filteredProject,setFilterredProject]=useState(props.data.projects)
+  function onSkillSelect(selectedSkills, selectedItem) {
+    setSelectedSkill(selectedSkills);
+    updateFilteredProject(selectedSkills,selctedService)
+  }
+  function onSkillRemove(selectedSkills, removedItem) {
+    setSelectedSkill(selectedSkills);
+    updateFilteredProject(selectedSkills,selctedService)
+  }
+  function onServiceSelect(_, selectedService) {
+    setSelectedService([selectedService]);
+    updateFilteredProject(selectedSkill,[selectedService])
+  }
+  function onServiceRemoved(_, selectedService) {}
+  function updateFilteredProject(skills,services){
+    var new_filtered_project=props.data.projects
+    if(services[0].id!=0)
+    {
+      new_filtered_project=new_filtered_project.filter(project=>project.service_ids.includes(services[0].id))
+    }
+    if(skills.length!=0)
+    {
+      var all_skills=[]
+      skills.map(skill=>all_skills.push(skill.id))
+
+      new_filtered_project=new_filtered_project.filter(project=>{
+        var isFound=true
+        all_skills.map(skill=>{
+          if(!project.skill_ids.includes(skill))
+            isFound=false
+        })
+        return isFound
+      })
+    }
+    setFilterredProject(new_filtered_project)
+  }
 
   return (
     <Wrapper>
@@ -37,7 +69,7 @@ export default function Home(props) {
         onServiceRemoved={onServiceRemoved}
         skills={props.data.skills}
         services={services}
-        projects={props.data.projects}
+        filteredProject={filteredProject}
         mode={theme.mode}
       />
     </Wrapper>

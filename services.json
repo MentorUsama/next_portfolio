@@ -165,7 +165,7 @@
             "title":"Portfolio",
             "description":"Simple Next js portfolio website with static page rendering.",
             "image":"portfolio.PNG",
-            "github":"",
+            "github":"https://github.com/MentorUsama/next_portfolio",
             "host":"",
             "is_upwork":false,
             "priority":6
