@@ -1,0 +1,111 @@
+{
+    "services":[
+        {
+            "id":1,
+            "title":"Web App",
+            "description":"Convert design into pixel perfect website and integrate backend apis using framework like react.",
+            "priority":1,
+            "image":"web_App.PNG"
+        },
+        {
+            "id":2,
+            "title":"Mobile App",
+            "description":"Convert your design into mobile app and integrate backend apis using react native framework.",
+            "priority":2,
+            "image":"react_native.png"
+        },
+        {
+            "id":3,
+            "title":"PWA",
+            "description":"Develop progressive web app that looks and behaves as if it is a mobile app. Without requiring the end user to download any software locally.",
+            "priority":3,
+            "image":"pwa.jpg"
+        }
+    ],
+    "skills":[
+        {
+            "id":1,
+            "name":"HTML",
+            "priority":1,
+            "image":"skills_html.png",
+            "type":"primary"
+        },
+        {
+            "id":2,
+            "name":"CSS",
+            "priority":2,
+            "image":"skills_css.png",
+            "type":"primary"
+        },
+        {
+            "id":3,
+            "name":"Javascript",
+            "priority":3,
+            "image":"skills_javascript.png",
+            "type":"primary"
+        },
+        {
+            "id":4,
+            "name":"Bootstrap",
+            "priority":4,
+            "image":"skill_bootstrap.png",
+            "type":"secondary"
+        },
+        {
+            "id":5,
+            "name":"React",
+            "priority":5,
+            "image":"skills_react_native.png",
+            "type":"primary"
+        },
+        {
+            "id":6,
+            "name":"Next Js",
+            "priority":6,
+            "image":"skills_next_js.svg",
+            "type":"primary"
+        },
+        {
+            "id":7,
+            "name":"React Native",
+            "priority":7,
+            "image":"skills_react_native.png",
+            "type":"primary"
+        },
+        {
+            "id":8,
+            "name":"Material UI",
+            "priority":8,
+            "image":"skills_material_ui.png",
+            "type":"secondary"
+        },
+        {
+            "id":9,
+            "name":"Django",
+            "priority":9,
+            "image":"skills_django.png",
+            "type":"secondary"
+        },
+        {
+            "id":10,
+            "name":"Firebase",
+            "priority":10,
+            "image":"skills_firebase.svg",
+            "type":"secondary"
+        }
+    ],
+    "projects":[
+        {
+            "id":1,
+            "service_ids":[],
+            "skill_ids":[],
+            "title":"",
+            "description":"",
+            "image":"",
+            "guthub":"",
+            "host":"",
+            "is_upwork":false,
+            "priority":1
+        }
+    ]
+}
