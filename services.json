@@ -100,15 +100,75 @@
     "projects":[
         {
             "id":1,
-            "service_ids":[],
-            "skill_ids":[],
-            "title":"",
-            "description":"",
-            "image":"",
+            "service_ids":[1],
+            "skill_ids":[5,10,3,2,1],
+            "title":"Slack App",
+            "description":"Chatting app with functionality of both private and public messaging.",
+            "image":"slack_app.png",
+            "guthub":"https://github.com/MentorUsama/massengerApp",
+            "host":"https://slack-7260c.firebaseapp.com/",
+            "is_upwork":false,
+            "priority":1
+        },
+        {
+            "id":2,
+            "service_ids":[1],
+            "skill_ids":[5,10,3,2,1],
+            "title":"Burger Builder",
+            "description":"Simple Burger Builder app with firebase authentication and database.",
+            "image":"burger_builder.PNG",
+            "guthub":"https://github.com/MentorUsama/ReactBurgerBuilder",
+            "host":"https://burger-b4810.web.app/",
+            "is_upwork":false,
+            "priority":2
+        },
+        {
+            "id":3,
+            "service_ids":[2],
+            "skill_ids":[7,3,2,1],
+            "title":"Visual Shop",
+            "description":"An ecommerce react native app with functionality of searching product by image.",
+            "image":"visual_shop_app.jpeg",
+            "guthub":"https://github.com/MentorUsama/visual_shop_frontend",
+            "host":"",
+            "is_upwork":false,
+            "priority":3
+        },
+        {
+            "id":4,
+            "service_ids":[2],
+            "skill_ids":[7,10,3,2,1],
+            "title":"Ticket Booking",
+            "description":"React native app for booking ticket online.",
+            "image":"ticket_bookin_app.PNG",
+            "guthub":"https://github.com/MentorUsama/visual_shop_frontend",
+            "host":"",
+            "is_upwork":false,
+            "priority":4
+        },
+        {
+            "id":5,
+            "service_ids":[3],
+            "skill_ids":[3,2,1,10],
+            "title":"PWA Blog",
+            "description":"Simple Blog with progressive web app functionality",
+            "image":"service_worker.PNG",
+            "guthub":"https://github.com/MentorUsama/visual_shop_frontend",
+            "host":"",
+            "is_upwork":false,
+            "priority":5
+        },
+        {
+            "id":6,
+            "service_ids":[1],
+            "skill_ids":[3,2,1,6],
+            "title":"Portfolio",
+            "description":"Simple Next js portfolio website with static page rendering.",
+            "image":"portfolio.PNG",
             "guthub":"",
             "host":"",
             "is_upwork":false,
-            "priority":1
+            "priority":6
         }
     ]
 }

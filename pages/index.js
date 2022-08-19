@@ -37,6 +37,7 @@ export default function Home(props) {
         onServiceRemoved={onServiceRemoved}
         skills={props.data.skills}
         services={services}
+        projects={props.data.projects}
         mode={theme.mode}
       />
     </Wrapper>

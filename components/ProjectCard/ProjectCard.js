@@ -10,7 +10,7 @@ export default function ProjectCard(props) {
       {/* Banner */}
       <div className={classes.projectCard__banner}>
         <div className={classes.projectCard__banner_image}>
-            <Image  src={props.banner} alt={props.title} />
+            <Image layout='fill' src={`/images/projects/${props.banner}`} alt={props.title} />
         </div>
         <div className={classes.projectCard__banner_title}>
             <h2>{props.title}</h2>

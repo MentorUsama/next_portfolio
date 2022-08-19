@@ -65,51 +65,19 @@ export default function Projects(props) {
         </div>
       </div>
       <div className={classes.projects__container}>
-        <div>
-          <ProjectCard
-            mode={props.mode}
-            title="Slack App"
-            description="A chatting app with functionality of both [ublic and personal chat with realtime database"
-            banner={images.ReactNativeChatting}
-            tags={["HTML", "CSS", "Javascript", "React", "Firebase"]}
-          />
-        </div>
-        <div>
-          <ProjectCard
-            mode={props.mode}
-            title="Slack App"
-            description="A chatting app with functionality of both [ublic and personal chat with realtime database"
-            banner={images.ReactNativeChatting}
-            tags={["HTML", "CSS", "Javascript", "React", "Firebase"]}
-          />
-        </div>
-        <div>
-          <ProjectCard
-            mode={props.mode}
-            title="Slack App"
-            description="A chatting app with functionality of both [ublic and personal chat with realtime database"
-            banner={images.ReactNativeChatting}
-            tags={["HTML", "CSS", "Javascript", "React", "Firebase"]}
-          />
-        </div>
-        <div>
-          <ProjectCard
-            mode={props.mode}
-            title="Slack App"
-            description="A chatting app with functionality of both [ublic and personal chat with realtime database"
-            banner={images.ReactNativeChatting}
-            tags={["HTML", "CSS", "Javascript", "React", "Firebase"]}
-          />
-        </div>
-        <div>
-          <ProjectCard
-            mode={props.mode}
-            title="Slack App"
-            description="A chatting app with functionality of both [ublic and personal chat with realtime database"
-            banner={images.ReactNativeChatting}
-            tags={["HTML", "CSS", "Javascript", "React", "Firebase"]}
-          />
-        </div>
+        {
+          props.projects.map(project=>(
+            <div key={project.id}>
+              <ProjectCard
+                mode={props.mode}
+                title={project.title}
+                description={project.description}
+                banner={project.image}
+                tags={["HTML", "CSS", "Javascript", "React", "Firebase"]}
+              />
+            </div>
+          ))
+        }
       </div>
     </div>
   );
