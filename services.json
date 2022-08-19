@@ -5,21 +5,24 @@
             "title":"Web App",
             "description":"Convert design into pixel perfect website and integrate backend apis using framework like react.",
             "priority":1,
-            "image":"web_App.PNG"
+            "image":"web_App.PNG",
+            "icon":"react_native.png"
         },
         {
             "id":2,
             "title":"Mobile App",
             "description":"Convert your design into mobile app and integrate backend apis using react native framework.",
             "priority":2,
-            "image":"react_native.png"
+            "image":"messenger_App.png",
+            "icon":"react_native.png"
         },
         {
             "id":3,
             "title":"PWA",
             "description":"Develop progressive web app that looks and behaves as if it is a mobile app. Without requiring the end user to download any software locally.",
             "priority":3,
-            "image":"pwa.jpg"
+            "image":"pwa.jpg",
+            "icon":"pwa_icon.png"
         }
     ],
     "skills":[

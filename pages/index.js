@@ -18,8 +18,14 @@ export default function Home(props) {
   return (
     <Wrapper>
       <Hero mode={theme.mode} />
-      <Services mode={theme.mode} />
-      <Skills mode={theme.mode} skills={props.data.skills} />
+      <Services 
+        mode={theme.mode} 
+        services={props.data.services}
+      />
+      <Skills 
+        mode={theme.mode} 
+        skills={props.data.skills} 
+      />
       <Projects
         selectedSkill={selectedSkill}
         setSelectedSkill={setSelectedSkill}
