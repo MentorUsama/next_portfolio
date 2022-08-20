@@ -51,7 +51,7 @@ export default function Navigation(props) {
                 <AiOutlineClose onClick={() => setOpenMenue(false)} />
               </div>
               <ul>
-                {["About", "Gallary", "Projects", "Skills", "Contact"].map(
+                {["About", "Services", "Skills", "Projects", "Feedback","Contact"].map(
                   (item) => (
                     <li key={item}>
                       <a href={`#${item}`}>{item}</a>
@@ -74,7 +74,7 @@ export default function Navigation(props) {
         </div>
         <div className={classes.navigation__links}>
           <ul>
-            {["About", "Gallary", "Projects", "Skills", "Contact"].map(
+            {["About", "Services", "Skills", "Projects", "Feedback","Contact"].map(
               (item) => (
                 <li key={item}>
                   <motion.a href={`#${item}`}>{item}</motion.a>
