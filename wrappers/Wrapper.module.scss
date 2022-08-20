@@ -1,0 +1,13 @@
+.wrapper{
+    &>div{
+        max-width: 1700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    background-color: #FFFFFF;
+    transition: background-color 1s ease 0s;
+}
+.dark.wrapper{
+    background-color: rgb(12, 12, 13);
+    transition: background-color 1s ease 0s;
+}
