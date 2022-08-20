@@ -185,6 +185,34 @@
             "feedback":"Usama went above and beyond any expectations we had, and even took the liberty to highlight best practices we had overlooked even though they were outside the scope of the task we asked him to help out with. He has been a colossal asset to our project and we've been extremely pleased to have the chance to work with him!!",
             "job_description":"This job is private and description could not be provided",
             "link":""
+        },
+        {
+            "id":2,
+            "profile_pic":"place_holder_male.png",
+            "source":"upwork.png",
+            "title":"PSD to React, XD to React, Sketch to React, Figma to React or any React app",
+            "earning":"100",
+            "start_date":"2020-12-1",
+            "end_date":"2021-2-1",
+            "job_type":"private",
+            "rating":4.0,
+            "feedback":"Usama went above and beyond any expectations we had, and even took the liberty to highlight best practices we had overlooked even though they were outside the scope of the task we asked him to help out with. He has been a colossal asset to our project and we've been extremely pleased to have the chance to work with him!!",
+            "job_description":"This job is private and description could not be provided",
+            "link":""
+        },
+        {
+            "id":3,
+            "profile_pic":"place_holder_male.png",
+            "source":"upwork.png",
+            "title":"PSD to React, XD to React, Sketch to React, Figma to React or any React app",
+            "earning":"100",
+            "start_date":"2020-12-1",
+            "end_date":"2021-2-1",
+            "job_type":"private",
+            "rating":4.0,
+            "feedback":"Usama went above and beyond any expectations we had, and even took the liberty to highlight best practices we had overlooked even though they were outside the scope of the task we asked him to help out with. He has been a colossal asset to our project and we've been extremely pleased to have the chance to work with him!!",
+            "job_description":"This job is private and description could not be provided",
+            "link":""
         }
     ]
 }

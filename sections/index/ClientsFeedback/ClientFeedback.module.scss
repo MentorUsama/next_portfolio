@@ -1,9 +1,6 @@
 .feedback{
-    min-height: 100vh;
-    display: flex;
     padding-left: 120px;
     padding-right: 120px;
-    align-items: center;
     background-color: #FFFFFF;
     transition: background-color 1s ease 0s;
     padding-bottom: 50px;
@@ -16,8 +13,22 @@
         padding-right: 20px;
         flex-direction: column;
     }
+    &>h1{
+        font-weight: 700;
+        font-size: 38px;
+        color: #353535;
+        transition: color 1s ease 0s;
+    }
 }
 .dark.feedback{
     background-color: rgb(12, 12, 13);
     transition: background-color 1s ease 0s;
+    &>h1{
+        color: #FFFFFF;
+        transition: color 1s ease 0s;
+    }
+}
+
+.feedback__container{
+    display: flex;
 }
