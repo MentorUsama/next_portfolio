@@ -33,13 +33,11 @@ export default function Hero(props) {
             <h1>I&apos;m <span>{text}</span></h1>
           </div>
           <p className={classes.hero__text}>
-            Designing a website or converting the design into a responsive website
-            is a challenge. I am a highly energetic frontend developer to help you
-            with that challenge.
+            I am a web developer with extensive experience in frontend technologies like HTML, CSS, Bootstrap, Javascript, React and React native and backend technologies like Django, Django rest framework, and firebase.
           </p>
           <div className={classes.hero__buttonContainer}>
-            <Button title="Hire Me" />
-            <Button variant="outline" title="Projects" />
+            <a href="https://www.upwork.com/freelancers/~01a36c260b24da516c"><Button title="Hire Me" /></a>
+            <a href="#Projects"><Button variant="outline" title="Projects" /></a>
           </div>
         </motion.div>
         {/* Image */}
