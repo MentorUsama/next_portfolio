@@ -82,7 +82,7 @@ export default function ClientFeedback(props) {
             // showArrows={false}
           >
             {props.feedbacks.map((feedback) => (
-              <div key={feedback.id}>
+              <div key={feedback.id} style={{height:'100%'}}>
                 <FeedbackCard
                   mode={props.mode}
                   profile_pic={feedback.profile_pic}

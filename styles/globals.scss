@@ -131,10 +131,16 @@ body{
     bottom: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (max-width:750px) {
+        left: 25px;
+    }
 }
 .client_feedback_arrow.forw{
     right: -60px;
     bottom: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (max-width:750px) {
+        right: -35px;
+    }
 }

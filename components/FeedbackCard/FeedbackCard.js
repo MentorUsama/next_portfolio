@@ -22,12 +22,14 @@ export default function FeedbackCard(props) {
                             />
                         </div>
                         <div className={classes.source__image}>
-                            <Image
-                                src={`/images/feedback_profiles/${props.source}`}
-                                alt="Feedback Source"
-                                width="20px"
-                                height="20px"
-                            />
+                            <a href="https://www.upwork.com/freelancers/~01a36c260b24da516c" target="__blank">
+                                <Image
+                                    src={`/images/feedback_profiles/${props.source}`}
+                                    alt="Feedback Source"
+                                    width="20px"
+                                    height="20px"
+                                />
+                            </a>
                         </div>
                     </div>
                     <div>
