@@ -5,6 +5,7 @@ import ServiceCard from './ServiceCard/ServiceCard'
 import SkillsCard from './SkillsCard/SkillsCard'
 import FeedbackCard from '../components/FeedbackCard/FeedbackCard'
 import Rating from './Rating/Rating'
+import ContactCard from './ContactCard/ContactCard'
 export {
     Footer,
     Navigation,
@@ -12,5 +13,6 @@ export {
     ServiceCard,
     SkillsCard,
     FeedbackCard,
-    Rating
+    Rating,
+    ContactCard
 }

@@ -8,7 +8,7 @@ export default function Wrapper(props) {
     <div className={theme.mode}>
         <Navigation mode={theme.mode} setMode={theme.setMode} />
         {props.children}
-        <Footer />
+        <Footer mode={theme.mode} />
     </div>
   )
 }
