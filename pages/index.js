@@ -3,7 +3,7 @@ import path from "path";
 
 import { useState } from "react";
 import Wrapper from "../wrappers/Wrapper";
-import { Hero, Services, Skills, Projects } from "../sections/index";
+import { Hero, Services, Skills, Projects,ClientFeedback } from "../sections/index";
 import { useTheme } from "../context";
 export default function Home(props) {
   const theme = useTheme();
@@ -71,6 +71,10 @@ export default function Home(props) {
         services={services}
         filteredProject={filteredProject}
         mode={theme.mode}
+      />
+      <ClientFeedback 
+        mode={theme.mode}
+        feedbacks={props.data.feedbacks}
       />
     </Wrapper>
   );

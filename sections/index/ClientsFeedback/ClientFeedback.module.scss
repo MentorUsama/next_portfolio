@@ -1,0 +1,23 @@
+.feedback{
+    min-height: 100vh;
+    display: flex;
+    padding-left: 120px;
+    padding-right: 120px;
+    align-items: center;
+    background-color: #FFFFFF;
+    transition: background-color 1s ease 0s;
+    padding-bottom: 50px;
+    @media screen and (max-width:980px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media screen and (max-width:750px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+}
+.dark.feedback{
+    background-color: rgb(12, 12, 13);
+    transition: background-color 1s ease 0s;
+}

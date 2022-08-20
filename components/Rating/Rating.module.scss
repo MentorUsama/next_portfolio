@@ -1,0 +1,51 @@
+.rating{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &>div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        &>div{
+            margin-top: 5px;
+        }
+    }
+    p{
+        margin-left: 5px;
+        font-size: 13px;
+        color: rgb(0, 0, 0);
+        transition: color 1s ease 0s;
+        font-weight: bold;
+    }
+    svg{
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        transition: color 1s ease 0s;
+    }
+    .fill{
+        svg{
+            color: #ffc200;
+            transition: color 1s ease 0s;
+        }
+    }
+}
+.dark.rating{
+    svg{
+        color: #FFFFFF;
+        transition: color 1s ease 0s;
+    }
+    .fill{
+        svg{
+            color: #ffc200;
+            transition: color 1s ease 0s;
+        }
+    }
+    p{
+        color: #FFFFFF;
+        transition: color 1s ease 0s;
+    }
+}
